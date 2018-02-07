@@ -7,17 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A139F07202B3FC3006A29FD /* SPBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A139F06202B3FC3006A29FD /* SPBody.swift */; };
+		5A139F09202B44C7006A29FD /* SPGravityEffector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A139F08202B44C7006A29FD /* SPGravityEffector.swift */; };
+		5A139F0B202B4599006A29FD /* SPEffector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A139F0A202B4599006A29FD /* SPEffector.swift */; };
 		5AEFAADF2029C5BB00B3CF36 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AEFAADE2029C5BB00B3CF36 /* AppDelegate.swift */; };
 		5AEFAAE12029C5BB00B3CF36 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AEFAAE02029C5BB00B3CF36 /* ViewController.swift */; };
 		5AEFAAE42029C5BB00B3CF36 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AEFAAE22029C5BB00B3CF36 /* Main.storyboard */; };
 		5AEFAAE62029C5BB00B3CF36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5AEFAAE52029C5BB00B3CF36 /* Assets.xcassets */; };
 		5AEFAAE92029C5BB00B3CF36 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AEFAAE72029C5BB00B3CF36 /* LaunchScreen.storyboard */; };
 		5AEFAAF22029CB4B00B3CF36 /* Physics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AEFAAF12029CB4B00B3CF36 /* Physics.swift */; };
-		5AEFAAF42029D6E200B3CF36 /* PhysicalQuantity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AEFAAF32029D6E200B3CF36 /* PhysicalQuantity.swift */; };
-		5AEFAAF62029DBAF00B3CF36 /* PhysicsSimulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AEFAAF52029DBAF00B3CF36 /* PhysicsSimulation.swift */; };
+		5AEFAAF62029DBAF00B3CF36 /* SPBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AEFAAF52029DBAF00B3CF36 /* SPBox.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5A139F06202B3FC3006A29FD /* SPBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPBody.swift; sourceTree = "<group>"; };
+		5A139F08202B44C7006A29FD /* SPGravityEffector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPGravityEffector.swift; sourceTree = "<group>"; };
+		5A139F0A202B4599006A29FD /* SPEffector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPEffector.swift; sourceTree = "<group>"; };
 		5AEFAADB2029C5BB00B3CF36 /* SwiftPhysics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftPhysics.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AEFAADE2029C5BB00B3CF36 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5AEFAAE02029C5BB00B3CF36 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -26,8 +31,7 @@
 		5AEFAAE82029C5BB00B3CF36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5AEFAAEA2029C5BB00B3CF36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5AEFAAF12029CB4B00B3CF36 /* Physics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Physics.swift; sourceTree = "<group>"; };
-		5AEFAAF32029D6E200B3CF36 /* PhysicalQuantity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhysicalQuantity.swift; sourceTree = "<group>"; };
-		5AEFAAF52029DBAF00B3CF36 /* PhysicsSimulation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhysicsSimulation.swift; sourceTree = "<group>"; };
+		5AEFAAF52029DBAF00B3CF36 /* SPBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPBox.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,8 +79,10 @@
 			isa = PBXGroup;
 			children = (
 				5AEFAAF12029CB4B00B3CF36 /* Physics.swift */,
-				5AEFAAF32029D6E200B3CF36 /* PhysicalQuantity.swift */,
-				5AEFAAF52029DBAF00B3CF36 /* PhysicsSimulation.swift */,
+				5AEFAAF52029DBAF00B3CF36 /* SPBox.swift */,
+				5A139F06202B3FC3006A29FD /* SPBody.swift */,
+				5A139F08202B44C7006A29FD /* SPGravityEffector.swift */,
+				5A139F0A202B4599006A29FD /* SPEffector.swift */,
 			);
 			path = engine;
 			sourceTree = "<group>";
@@ -154,10 +160,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				5AEFAAE12029C5BB00B3CF36 /* ViewController.swift in Sources */,
-				5AEFAAF42029D6E200B3CF36 /* PhysicalQuantity.swift in Sources */,
 				5AEFAADF2029C5BB00B3CF36 /* AppDelegate.swift in Sources */,
+				5A139F0B202B4599006A29FD /* SPEffector.swift in Sources */,
 				5AEFAAF22029CB4B00B3CF36 /* Physics.swift in Sources */,
-				5AEFAAF62029DBAF00B3CF36 /* PhysicsSimulation.swift in Sources */,
+				5A139F09202B44C7006A29FD /* SPGravityEffector.swift in Sources */,
+				5A139F07202B3FC3006A29FD /* SPBody.swift in Sources */,
+				5AEFAAF62029DBAF00B3CF36 /* SPBox.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,19 +1,17 @@
 //
-//  PhysicsSimulation.swift
+//  SPBody.swift
 //  SwiftPhysics
 //
-//  Created by ZhouJiatao on 2018.02.06.
+//  Created by ZhouJiatao on 2018.02.07.
 //  Copyright © 2018 ZJT. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
-class PhysicsSimulation {
-
+class SPBody {
     private var referenceView: UIView!
     
     init(referenceView: UIView) {
         self.referenceView = referenceView
     }
-    
 }
